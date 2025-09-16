@@ -1,11 +1,20 @@
 ######################
 ## my_first_program.R
 ######################
+# Think about how to store and organize your files
+# Get a copy of the book.
+# Set up a github account. Use a personal email, not a school email.
+# Create a README.md
+# LaTeX. Use overleaf.
+
+# Open a new R file
+# Hot keys: Option + command + i
 
 # set working directory
-setwd("C:\\Users\\mikeb\\OneDrive - The Pennsylvania State University\\R-workshop")
+setwd("")
 # Import a dataset
 df <- read.csv('data/justice_results.csv')
+df <- read.csv("https://raw.githubusercontent.com/MLBurnham/pols_602/refs/heads/main/R_intro/justice_results.csv")
 # Do some function
 n <- replicate(100000, sum(df$petitioner_pitch))
 
